@@ -13,6 +13,16 @@
 		D418924926B80BB600FCA2A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D418924726B80BB600FCA2A0 /* Main.storyboard */; };
 		D418924B26B80BBA00FCA2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D418924A26B80BBA00FCA2A0 /* Assets.xcassets */; };
 		D418924E26B80BBA00FCA2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D418924C26B80BBA00FCA2A0 /* LaunchScreen.storyboard */; };
+		D418926B26B818A700FCA2A0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418926A26B818A700FCA2A0 /* FeedViewController.swift */; };
+		D418926E26B818E400FCA2A0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418926D26B818E400FCA2A0 /* SearchViewController.swift */; };
+		D418927026B818F000FCA2A0 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418926F26B818F000FCA2A0 /* DrawingViewController.swift */; };
+		D418927226B8190200FCA2A0 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418927126B8190200FCA2A0 /* NotificationViewController.swift */; };
+		D418927426B8190E00FCA2A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418927326B8190E00FCA2A0 /* ProfileViewController.swift */; };
+		D418927626B8192900FCA2A0 /* FeedView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D418927526B8192900FCA2A0 /* FeedView.storyboard */; };
+		D418927826B8193600FCA2A0 /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D418927726B8193600FCA2A0 /* SearchView.storyboard */; };
+		D418927A26B8194600FCA2A0 /* DrawingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D418927926B8194600FCA2A0 /* DrawingView.storyboard */; };
+		D418927C26B8195000FCA2A0 /* NotificationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D418927B26B8195000FCA2A0 /* NotificationView.storyboard */; };
+		D418927E26B8195E00FCA2A0 /* ProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D418927D26B8195E00FCA2A0 /* ProfileView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		D418924A26B80BBA00FCA2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D418924D26B80BBA00FCA2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D418924F26B80BBA00FCA2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D418926A26B818A700FCA2A0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D418926D26B818E400FCA2A0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D418926F26B818F000FCA2A0 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		D418927126B8190200FCA2A0 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		D418927326B8190E00FCA2A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D418927526B8192900FCA2A0 /* FeedView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedView.storyboard; sourceTree = "<group>"; };
+		D418927726B8193600FCA2A0 /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
+		D418927926B8194600FCA2A0 /* DrawingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrawingView.storyboard; sourceTree = "<group>"; };
+		D418927B26B8195000FCA2A0 /* NotificationView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationView.storyboard; sourceTree = "<group>"; };
+		D418927D26B8195E00FCA2A0 /* ProfileView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +76,10 @@
 		D418924026B80BB600FCA2A0 /* Sketchare */ = {
 			isa = PBXGroup;
 			children = (
-				D418925B26B8160700FCA2A0 /* View */,
+				D418925B26B8160700FCA2A0 /* ViewController */,
+				D418926126B8174900FCA2A0 /* View */,
 				D418924126B80BB600FCA2A0 /* AppDelegate.swift */,
 				D418924326B80BB600FCA2A0 /* SceneDelegate.swift */,
-				D418924526B80BB600FCA2A0 /* ViewController.swift */,
-				D418924726B80BB600FCA2A0 /* Main.storyboard */,
 				D418924A26B80BBA00FCA2A0 /* Assets.xcassets */,
 				D418924C26B80BBA00FCA2A0 /* LaunchScreen.storyboard */,
 				D418924F26B80BBA00FCA2A0 /* Info.plist */,
@@ -68,51 +87,126 @@
 			path = Sketchare;
 			sourceTree = "<group>";
 		};
-		D418925B26B8160700FCA2A0 /* View */ = {
+		D418925B26B8160700FCA2A0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D418926026B8161B00FCA2A0 /* FeedView */,
-				D418925F26B8161900FCA2A0 /* SearchView */,
-				D418925E26B8161800FCA2A0 /* DrawingView */,
-				D418925D26B8161700FCA2A0 /* NotificationView */,
-				D418925C26B8160C00FCA2A0 /* ProfileView */,
+				D418926026B8161B00FCA2A0 /* Feed */,
+				D418925F26B8161900FCA2A0 /* Search */,
+				D418925E26B8161800FCA2A0 /* Drawing */,
+				D418925D26B8161700FCA2A0 /* Notification */,
+				D418925C26B8160C00FCA2A0 /* Profile */,
+				D418926826B817EB00FCA2A0 /* Main */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D418925C26B8160C00FCA2A0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D418927326B8190E00FCA2A0 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D418925D26B8161700FCA2A0 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				D418927126B8190200FCA2A0 /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		D418925E26B8161800FCA2A0 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				D418926F26B818F000FCA2A0 /* DrawingViewController.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		D418925F26B8161900FCA2A0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D418926D26B818E400FCA2A0 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D418926026B8161B00FCA2A0 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				D418926A26B818A700FCA2A0 /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		D418926126B8174900FCA2A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D418926726B817C800FCA2A0 /* Feed */,
+				D418926626B817C700FCA2A0 /* Search */,
+				D418926526B817C500FCA2A0 /* Drawing */,
+				D418926426B817C400FCA2A0 /* Notification */,
+				D418926326B817C200FCA2A0 /* Profile */,
+				D418926926B8181400FCA2A0 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		D418925C26B8160C00FCA2A0 /* ProfileView */ = {
+		D418926326B817C200FCA2A0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D418927D26B8195E00FCA2A0 /* ProfileView.storyboard */,
 			);
-			path = ProfileView;
+			path = Profile;
 			sourceTree = "<group>";
 		};
-		D418925D26B8161700FCA2A0 /* NotificationView */ = {
+		D418926426B817C400FCA2A0 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
+				D418927B26B8195000FCA2A0 /* NotificationView.storyboard */,
 			);
-			path = NotificationView;
+			path = Notification;
 			sourceTree = "<group>";
 		};
-		D418925E26B8161800FCA2A0 /* DrawingView */ = {
+		D418926526B817C500FCA2A0 /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				D418927926B8194600FCA2A0 /* DrawingView.storyboard */,
 			);
-			path = DrawingView;
+			path = Drawing;
 			sourceTree = "<group>";
 		};
-		D418925F26B8161900FCA2A0 /* SearchView */ = {
+		D418926626B817C700FCA2A0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				D418927726B8193600FCA2A0 /* SearchView.storyboard */,
 			);
-			path = SearchView;
+			path = Search;
 			sourceTree = "<group>";
 		};
-		D418926026B8161B00FCA2A0 /* FeedView */ = {
+		D418926726B817C800FCA2A0 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				D418927526B8192900FCA2A0 /* FeedView.storyboard */,
 			);
-			path = FeedView;
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		D418926826B817EB00FCA2A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D418924526B80BB600FCA2A0 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D418926926B8181400FCA2A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D418924726B80BB600FCA2A0 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +267,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D418924E26B80BBA00FCA2A0 /* LaunchScreen.storyboard in Resources */,
+				D418927E26B8195E00FCA2A0 /* ProfileView.storyboard in Resources */,
+				D418927826B8193600FCA2A0 /* SearchView.storyboard in Resources */,
+				D418927626B8192900FCA2A0 /* FeedView.storyboard in Resources */,
 				D418924B26B80BBA00FCA2A0 /* Assets.xcassets in Resources */,
+				D418927A26B8194600FCA2A0 /* DrawingView.storyboard in Resources */,
+				D418927C26B8195000FCA2A0 /* NotificationView.storyboard in Resources */,
 				D418924926B80BB600FCA2A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,8 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D418926E26B818E400FCA2A0 /* SearchViewController.swift in Sources */,
+				D418927026B818F000FCA2A0 /* DrawingViewController.swift in Sources */,
 				D418924626B80BB600FCA2A0 /* ViewController.swift in Sources */,
+				D418927226B8190200FCA2A0 /* NotificationViewController.swift in Sources */,
 				D418924226B80BB600FCA2A0 /* AppDelegate.swift in Sources */,
+				D418926B26B818A700FCA2A0 /* FeedViewController.swift in Sources */,
+				D418927426B8190E00FCA2A0 /* ProfileViewController.swift in Sources */,
 				D418924426B80BB600FCA2A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
