@@ -10,9 +10,9 @@ import UIKit
 struct Post {
     let userName: String
     let fullName: String
-    let caption: String
-    let profileImageName: String
-    let postImageName: String
+    let caption: String?
+    let profileImage: UIImage!
+    let postImage: UIImage!
     
     let timeStamp: String
 }

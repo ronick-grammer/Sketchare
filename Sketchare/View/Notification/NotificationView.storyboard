@@ -43,7 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" selectedImage="bell.fill" id="j7G-pT-8mq"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="" image="bell" catalog="system" selectedImage="bell.fill" id="j7G-pT-8mq"/>
                     <navigationItem key="navigationItem" title="Notification" id="INg-hS-HUT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>

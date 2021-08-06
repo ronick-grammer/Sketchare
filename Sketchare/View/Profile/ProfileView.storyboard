@@ -43,7 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="cKp-o4-rgj"/>
+                    <tabBarItem key="tabBarItem" tag="4" title="" image="person" catalog="system" selectedImage="person.fill" id="cKp-o4-rgj"/>
                     <navigationItem key="navigationItem" title="profile" id="FPh-MI-XoU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>

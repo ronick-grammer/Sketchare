@@ -43,7 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="rE3-FM-zat"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="rE3-FM-zat"/>
                     <navigationItem key="navigationItem" title="Search" id="t3P-Ol-vhC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>

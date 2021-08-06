@@ -10,8 +10,7 @@ import UIKit
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
-    
-    var posts = [Post]()
+    static var posts = [Post]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +19,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         
-        posts.append(Post(userName: "Ronick", fullName: "로닉", caption: "안녕", profileImageName: "sketch", postImageName: "sketch", timeStamp: "00"))
-
-        posts.append(Post(userName: "Kevin", fullName: "케빈", caption: "욜로", profileImageName: "profile", postImageName: "sketch", timeStamp: "00"))
-
-        posts.append(Post(userName: "wick", fullName: "윅", caption: "wick!!", profileImageName: "profile", postImageName: "sketch", timeStamp: "00"))
+        FeedViewController.posts.append(Post(userName: "Ronick", fullName: "로닉", caption: "안녕", profileImage: UIImage(named: "sketch"), postImage: UIImage(named: "sketch"), timeStamp: "00"))
+        
+        FeedViewController.posts.append(Post(userName: "Kevin", fullName: "케빈", caption: "욜로", profileImage: UIImage(named: "profile"), postImage: UIImage(named: "sketch"), timeStamp: "00"))
+        
+        FeedViewController.posts.append(Post(userName: "wick", fullName: "윅", caption: "wick!!", profileImage: UIImage(named: "profile"), postImage: UIImage(named: "sketch"), timeStamp: "00"))
+    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        table.reloadData() // 뷰 데이터 매번 갱신하기!!
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -34,13 +36,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     // 보여줄 셀의 갯수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        
+        return FeedViewController.posts.count
     }
     
     // 각 셀 보여주기
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FeedViewCell.identifier, for: indexPath) as! FeedViewCell
-        cell.configure(with: posts[indexPath.row])
+        cell.configure(with: FeedViewController.posts[indexPath.row])
         return cell
     }
     
@@ -49,8 +52,5 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 630
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
 }
 

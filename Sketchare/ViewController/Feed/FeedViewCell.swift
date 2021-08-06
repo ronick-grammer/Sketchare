@@ -30,9 +30,9 @@ class FeedViewCell: UITableViewCell {
     }
     
     func configure(with post: Post) {
-        self.postImage.image = UIImage(named: post.postImageName)
+        self.postImage.image = post.postImage
         self.userName.text = post.userName
-        self.profileImage.image = UIImage(named: post.profileImageName)
+        self.profileImage.image = post.profileImage
         self.fullName.text = post.fullName
         self.caption.text = post.caption
     }

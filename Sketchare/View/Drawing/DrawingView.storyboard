@@ -41,6 +41,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6p9-gT-KSf">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                                 <state key="normal" title="공유"/>
+                                                <connections>
+                                                    <action selector="btnShare:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="p5O-dQ-c9G"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
@@ -178,7 +181,7 @@
                             <constraint firstItem="E2L-Sk-8KF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xkA-GV-gXZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="paintbrush.pointed" catalog="system" selectedImage="paintbrush.pointed.fill" id="HZ8-i0-S47"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="paintbrush.pointed" catalog="system" selectedImage="paintbrush.pointed.fill" id="HZ8-i0-S47"/>
                     <navigationItem key="navigationItem" title="Drawing" id="dgu-68-z7p"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
