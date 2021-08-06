@@ -12,12 +12,15 @@ class DrawingViewController: UIViewController {
     @IBOutlet var txtCaption: UITextField!
     @IBOutlet var imgCanvas: UIImageView!
     
+    @IBOutlet var btnTools: [UIButton]!
+    
     var lastPoint: CGPoint! // 최근에 터치하거나 이동한 위치
     var lineSize: CGFloat = 2.0 // 선 두께
     var lineColor = UIColor.black.cgColor // 선 색깔
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
