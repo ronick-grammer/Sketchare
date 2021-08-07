@@ -11,9 +11,8 @@ class ProfileViewController: UIViewController {
      
     @IBOutlet var imgProfile: UIImageView!
     @IBOutlet var labelPostCount: UILabel!
-    @IBOutlet var  collectionView: UICollectionView!
+    @IBOutlet var collectionView: UICollectionView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +33,15 @@ class ProfileViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        imgProfile.image = currentUser.profileImage
         imgProfile.layer.cornerRadius = 15
+        
+        labelPostCount.text = String(currentUserPosts.count)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData() // 데이터 갱신 대비해서 매번 콜렉션 뷰 데이터 갱신
+        labelPostCount.text = String(currentUserPosts.count)
     }
 }
 
@@ -50,13 +57,13 @@ extension ProfileViewController: UICollectionViewDelegate { // 셀과 상호작�
 // 디스플레이할 셀의 갯수 반환
 extension ProfileViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 14
+        return currentUserPosts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //각  cell item 반환
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCollectionViewCell.identifier, for: indexPath) as! PostCollectionViewCell
         
-        cell.configure(with: UIImage(named: "sketch")!)
+        cell.configure(with: currentUserPosts[indexPath.row])
         
         return cell
     }

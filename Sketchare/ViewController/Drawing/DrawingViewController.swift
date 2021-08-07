@@ -84,9 +84,13 @@ class DrawingViewController: UIViewController {
     
 
     @IBAction func btnShare(_ sender: UIButton) {
-        FeedViewController.posts.append(Post(userName: "Kevin", fullName: "케빈", caption: txtCaption.text, profileImage: UIImage(named: "profile"), postImage: imgCanvas.image, timeStamp: "00"))
+        followingUserPosts.append(Post(userName: currentUser.userName, fullName: currentUser.fullName, caption: txtCaption.text, profileImage: currentUser.profileImage, postImage: imgCanvas.image, timeStamp: "00"))
+        
+        currentUserPosts.append(Post(userName: currentUser.userName, fullName: currentUser.fullName, caption: txtCaption.text, profileImage: currentUser.profileImage, postImage: imgCanvas.image, timeStamp: "00"))
+
         
         imgCanvas.image = nil
+        txtCaption.text = nil
         self.tabBarController?.selectedIndex = 0 // 피드 뷰로 이동
     }
     

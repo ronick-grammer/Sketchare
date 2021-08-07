@@ -10,7 +10,6 @@ import UIKit
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
-    static var posts = [Post]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +18,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         
-        FeedViewController.posts.append(Post(userName: "Ronick", fullName: "로닉", caption: "안녕", profileImage: UIImage(named: "sketch"), postImage: UIImage(named: "sketch"), timeStamp: "00"))
-        
-        FeedViewController.posts.append(Post(userName: "Kevin", fullName: "케빈", caption: "욜로", profileImage: UIImage(named: "profile"), postImage: UIImage(named: "sketch"), timeStamp: "00"))
-        
-        FeedViewController.posts.append(Post(userName: "wick", fullName: "윅", caption: "wick!!", profileImage: UIImage(named: "profile"), postImage: UIImage(named: "sketch"), timeStamp: "00"))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,13 +31,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     // 보여줄 셀의 갯수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return FeedViewController.posts.count
+        return followingUserPosts.count
     }
     
     // 각 셀 보여주기
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FeedViewCell.identifier, for: indexPath) as! FeedViewCell
-        cell.configure(with: FeedViewController.posts[indexPath.row])
+        cell.configure(with: followingUserPosts[indexPath.row])
         return cell
     }
     
