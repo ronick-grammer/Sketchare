@@ -9,24 +9,32 @@ import UIKit
 
 class ProfileViewController: UIViewController {
      
+    @IBOutlet var imgProfile: UIImageView!
+    @IBOutlet var labelPostCount: UILabel!
     @IBOutlet var  collectionView: UICollectionView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 셀 사이즈 세팅
+        /*  **** 셀 사이즈, 스페이싱 설정 **** */
+        // UICollectionViewDelegateFlowLayout 프로토콜을 통해 설정해 주지 않으면 해당 세팅 사용
         let layout = UICollectionViewFlowLayout()
-        // UICollectionViewDelegateFlowLayout 프로토콜을 통해 사이즈를 설정해 주지 않으면 해당 세팅 사용
-        // 하지만 여기서는 프로토콜을  사용해서 사이즈 설정
-        //layout.itemSize = CGSize(width: 120, height: 120)
+        let spacing = 2
+        let width = UIScreen.main.bounds.width / 3 - CGFloat(spacing) // 셀의 크기(정사각형)
+        layout.minimumLineSpacing = CGFloat(spacing) // 행 간격
+        layout.minimumInteritemSpacing = CGFloat(spacing) // 열 간격
+        layout.itemSize = CGSize(width: width, height: width)
         collectionView.collectionViewLayout = layout
+        
         
         // 콜렉션 뷰에 셀 등록
         collectionView.register(PostCollectionViewCell.nib(), forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        imgProfile.layer.cornerRadius = 15
     }
 }
 
@@ -51,13 +59,5 @@ extension ProfileViewController: UICollectionViewDataSource {
         cell.configure(with: UIImage(named: "sketch")!)
         
         return cell
-    }
-}
-
-// 각 셀의 크기, 마진이나 패딩 조절
-extension ProfileViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: 120, height: 120)
     }
 }

@@ -9,10 +9,12 @@ import UIKit
 
 class DrawingViewController: UIViewController {
 
+    @IBOutlet var vstack: UIStackView!
     @IBOutlet var txtCaption: UITextField!
     @IBOutlet var imgCanvas: UIImageView!
     
     @IBOutlet var btnTools: [UIButton]!
+    @IBOutlet var btnShare: UIButton!
     
     var lastPoint: CGPoint! // 최근에 터치하거나 이동한 위치
     var lineSize: CGFloat = 2.0 // 선 두께
@@ -21,6 +23,13 @@ class DrawingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        vstack.layer.borderWidth = 0.2
+        vstack.layer.borderColor = UIColor.gray.cgColor
+        
+        btnShare.layer.cornerRadius = 8
+        
+        txtCaption.layer.borderWidth = 0.2
+        txtCaption.layer.borderColor = UIColor.gray.cgColor
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -75,8 +84,9 @@ class DrawingViewController: UIViewController {
     
 
     @IBAction func btnShare(_ sender: UIButton) {
-        FeedViewController.posts.append(Post(userName: "Kevin", fullName: "케빈", caption: "욜로", profileImage: UIImage(named: "profile"), postImage: imgCanvas.image, timeStamp: "00"))
+        FeedViewController.posts.append(Post(userName: "Kevin", fullName: "케빈", caption: txtCaption.text, profileImage: UIImage(named: "profile"), postImage: imgCanvas.image, timeStamp: "00"))
         
+        imgCanvas.image = nil
         self.tabBarController?.selectedIndex = 0 // 피드 뷰로 이동
     }
     
