@@ -35,12 +35,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="ebN-IN-9TV" kind="relationship" relationship="viewControllers" id="GR5-VI-QCN"/>
-                        <segue destination="jfJ-LC-FDJ" kind="relationship" relationship="viewControllers" id="qad-iB-E5C"/>
                         <segue destination="GPV-B1-ved" kind="relationship" relationship="viewControllers" id="8m3-c3-TPi"/>
-                        <segue destination="hMf-Zc-cga" kind="relationship" relationship="viewControllers" id="IMO-Uz-yp1"/>
                         <segue destination="lag-0d-dw2" kind="relationship" relationship="viewControllers" id="pHx-9x-ucs"/>
                     </connections>
                 </tabBarController>

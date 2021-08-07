@@ -40,7 +40,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6p9-gT-KSf">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="35"/>
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="공유">
                                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                 </state>
@@ -209,9 +209,6 @@
         <image name="paintbrush.pointed.fill" catalog="system" width="128" height="119"/>
         <image name="pencil.tip" catalog="system" width="99" height="128"/>
         <image name="rectangle.topthird.inset" catalog="system" width="128" height="93"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

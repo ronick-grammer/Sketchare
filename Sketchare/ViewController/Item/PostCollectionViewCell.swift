@@ -20,6 +20,7 @@ class PostCollectionViewCell: UICollectionViewCell {
     
     public func configure(with post: Post) {
         imageView.image = post.postImage
+        imageView.layer.cornerRadius = 10
     }
     
     static func nib() -> UINib { // 셀을 컬렉션 뷰에 등록하기 위해서
